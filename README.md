@@ -26,27 +26,27 @@ To ensure analytical accuracy, the following preprocessing steps were performed:
 ## Exploratory Data Analysis (EDA)
 
 ### 1. Fire Intensity by Region
-![Fire Intensity](https://lh3.googleusercontent.com/d/1_yC4ZzY07N_K0-m67S2v6R-F0X6y1X5o)
+![Fire Intensity](results-in-graphs/Fire-Intensity-by-Region.png)
 *   **Description**: A bar chart comparing the mean estimated fire brightness across various Australian regions.
 *   **Commentary**: The visualization indicates that fire brightness (intensity) remains relatively consistent across major regions, though Northern Territory (NT) and Western Australia (WA) show slightly higher mean temperatures, suggesting more intense thermal events in those areas.
 
 ### 2. Longitudinal Trend of Fire Area
-![Yearly Trends](https://lh3.googleusercontent.com/d/1p9Y05S_H7u7GzV4j0uYf6T7r6y7N0Z6y)
+![Yearly Trends](results-in-graphs/Longitudinal-Trend-of-Fire-Area.png)
 *   **Description**: A line graph showing the average estimated fire area ($km^2$) from 2005 to 2020.
 *   **Commentary**: There is a significant spike in the average fire area around 2011-2012. While subsequent years show lower averages, the periodic peaks suggest a cyclical nature to large-scale wildfire events in Australia.
 
 ### 3. Distribution of Fire Brightness
-![Brightness Histogram](https://lh3.googleusercontent.com/d/1v0U8X0Z5y7N7G8u9A0Y6T5r6y7N0Z6y)
+![Brightness Histogram](results-in-graphs/Distribution-of-Fire-Brightness.png)
 *   **Description**: A histogram showing the frequency distribution of mean estimated fire brightness.
 *   **Commentary**: The data follows a near-normal distribution centered around **320 Kelvin**. Most fire events fall within the 310K to 330K range, with very few extreme high-intensity outliers exceeding 360K.
 
 ### 4. Correlation: Radiative Power vs. Confidence
-![Scatter Plot](https://lh3.googleusercontent.com/d/1w1V2X1Z2y3N4G5u6A7Y8T9r0y1N2Z3y)
+![Scatter Plot](results-in-graphs/Correlation-Radiative-Power-vs-Confidence.png)
 *   **Description**: A scatter plot illustrating the relationship between Fire Radiative Power (MW) and the Mean Confidence level.
 *   **Commentary**: There is a dense clustering at lower radiative power levels. As the radiative power increases, the confidence level typically remains high, suggesting that more intense fires are easier to detect and confirm via satellite imaging.
 
 ### 5. Regional Distribution of Fire Pixels
-![Regional Pie Chart](https://lh3.googleusercontent.com/d/1z2V3X4Z5y6N7G8u9A0Y1T2r3y4N5Z6y)
+![Regional Pie Chart](results-in-graphs/Regional-Distribution-of-Fire-Pixels.png)
 *   **Description**: A pie chart showing the percentage of pixels for presumed vegetation fires by region.
 *   **Commentary**: The **Northern Territory (NT) at 34.1%** and **Western Australia (WA) at 32.4%** account for the vast majority of fire-related pixel detections, indicating these regions are the most frequent hotspots for wildfire activity.
 
@@ -54,9 +54,9 @@ To ensure analytical accuracy, the following preprocessing steps were performed:
 
 ## Key Insights
 *   **Dominant Regions**: NT and WA are the primary contributors to wildfire activity in Australia, together accounting for over **66%** of all detected fire pixels.
-*   **Cyclical Peaks**: Fire area peaks approximately every 7-9 years, suggesting that long-term climatic cycles (like El Niño) may influence wildfire scales.
+*   **Cyclical Peaks**: Fire area peaks approximately every 7-9 years, suggesting that long term climatic cycles (like El Niño) may influence wildfire scales.
 *   **Intensity Consistency**: While the *area* of fires varies significantly by year, the *brightness* (temperature) remains fairly stable, indicating consistent fuel types and burning conditions across the continent.
-*   **Detection Accuracy**: High-intensity fires (high Radiative Power) consistently correlate with high confidence levels, validating the reliability of the satellite monitoring data.
+*   **Detection Accuracy**: High intensity fires (high Radiative Power) consistently correlate with high confidence levels, validating the reliability of the satellite monitoring data.
 
 ---
 
@@ -78,7 +78,8 @@ To ensure analytical accuracy, the following preprocessing steps were performed:
     ```bash
     pip install pandas matplotlib seaborn folium
     ```
-3.  **Run the Notebook**: Open `Wildfire_Analysis.ipynb# Comprehensive Analysis of Australian Wildfire Trends
+3.  **Run the Notebook**: Open `Analyzing wildfire activities in Australia.ipynb# Comprehensive Analysis of Australian Wildfire Trends
+4.  **View Dashboard**: Run `python Dash_wildfire.py` to launch the interactive dashboard in your browser.
 
 ---
 
