@@ -80,6 +80,7 @@ To ensure analytical accuracy, the following preprocessing steps were performed:
     ```
 3.  **Run the Notebook**: Open `Analyzing wildfire activities in Australia.ipynb# Comprehensive Analysis of Australian Wildfire Trends
 4.  **View Dashboard**: Run `python Dash_wildfire.py` to launch the interactive dashboard in your browser.
+    ![Live Dashboard look Like](results-in-graphs/Dashboard.png)
 
 ---
 
